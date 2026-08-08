@@ -9,6 +9,7 @@ const isValid = (input) => {
 };
 
 const isValidFullName = (input) => /^[A-Za-z ]*$/.test(input);
+const isValidCategoryName = (input) => /^[A-Za-z ]*$/.test(input);
 
 const isValidEmail = (input) =>
   /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(input);
@@ -32,4 +33,5 @@ module.exports = {
   isValidPhone,
   isValidPassword,
   isValidObjectId,
+  isValidCategoryName,
 };
